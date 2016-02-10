@@ -2,9 +2,10 @@
 import sys
 import time
 import random
-import datetime
 import telepot
 import sqlite3
+
+TOKEN = sys.argv[1]  # get token from command-line
 
 
 def connect_db():
@@ -29,7 +30,7 @@ def handle(msg):
         result = fetch[1].encode('utf-8').strip()
         bot.sendMessage(chat_id, result)
 
-bot = telepot.Bot('172517273:AAHkVkQoe-FvfVXPi6uUeDjR4N_s_gFQN3U')
+bot = telepot.Bot(TOKEN)
 bot.notifyOnMessage(handle)
 print 'I am listening ...'
 

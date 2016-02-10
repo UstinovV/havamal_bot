@@ -19,7 +19,7 @@ PASSWORD = 'default'
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-bot = telepot.Bot('172517273:AAHkVkQoe-FvfVXPi6uUeDjR4N_s_gFQN3U')
+bot = telepot.Bot('TOKEN')
 
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
@@ -45,7 +45,7 @@ def teardown_request(exception):
 
 @app.route('/')
 def hello_world():
-    #bot = telepot.Bot('172517273:AAHkVkQoe-FvfVXPi6uUeDjR4N_s_gFQN3U')
+    #bot = telepot.Bot(TOKEN)
     # print bot.getMe()
     # response = bot.getUpdates()
     # pprint(response)
