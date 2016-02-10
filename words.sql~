@@ -1,0 +1,4 @@
+CREATE TABLE words(
+	id INT NOT NULL PRIMARY KEY,
+	word TEXT 
+)
