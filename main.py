@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+
+#telegram framework
+import telepot
+from pprint import pprint
+
 # all the imports
 import sqlite3
 from flask import Flask, request, session, g, redirect, url_for, \
@@ -13,10 +19,17 @@ PASSWORD = 'default'
 app = Flask(__name__)
 app.config.from_object(__name__)
 
+bot = telepot.Bot('172517273:AAHkVkQoe-FvfVXPi6uUeDjR4N_s_gFQN3U')
 
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
 
+
+def handle(msg):
+    content_type, chat_type, chat_id = telepot.glance(msg)
+    print content_type, chat_type, chat_id
+    bot.sendMessage(40172523, 'Слово Высокого')
+    pprint(msg)
 
 @app.before_request
 def before_request():
@@ -32,6 +45,15 @@ def teardown_request(exception):
 
 @app.route('/')
 def hello_world():
+    #bot = telepot.Bot('172517273:AAHkVkQoe-FvfVXPi6uUeDjR4N_s_gFQN3U')
+    # print bot.getMe()
+    # response = bot.getUpdates()
+    # pprint(response)
+    cur = g.db.execute('SELECT * FROM words')
+    entries = [dict(id=row[0], word=row[1]) for row in cur.fetchall()]
+    bot.notifyOnMessage(handle)
+    #bot.sendMessage(40172523, entries[0]['word'].encode('utf-8').strip())
+
     return 'Hello World!'
 
 
