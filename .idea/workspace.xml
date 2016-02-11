@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a11e2680-9f6e-4393-9971-d343419a479e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/havamal.py" afterPath="$PROJECT_DIR$/havamal.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <ignored path="havamal_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,12 +51,13 @@
       <file leaf-file-name="havamal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/havamal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.803125">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.015625">
+              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-                <marker date="1455096001837" expanded="true" signature="577:606" placeholder="SELECT * FRO... words" />
-                <marker date="1455096001837" expanded="true" signature="577:607" placeholder="SELECT * FRO... words" />
+                <marker date="1455179695841" expanded="true" signature="489:518" placeholder="SELECT * FRO... words" />
+                <marker date="1455179695841" expanded="true" signature="489:519" placeholder="SELECT * FRO... words" />
+                <marker date="1455179695841" expanded="true" signature="1199:1229" placeholder="SELECT * FRO... words" />
               </folding>
             </state>
           </provider>
@@ -66,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/parser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <caret line="21" column="24" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="24" />
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
                 <marker date="1455095480843" expanded="true" signature="187:204" placeholder="DELETE FROM " />
@@ -420,18 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="e#25#39#0" expanded="true" />
-            <marker date="1455095480843" expanded="true" signature="187:204" placeholder="DELETE FROM " />
-            <marker date="1455095480843" expanded="true" signature="494:524" placeholder="INSERT INTO words... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -446,14 +435,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="24" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+            <marker date="1455095480843" expanded="true" signature="187:204" placeholder="DELETE FROM " />
+            <marker date="1455095480843" expanded="true" signature="494:524" placeholder="INSERT INTO words... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/havamal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.803125">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.015625">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
-            <marker date="1455096001837" expanded="true" signature="577:606" placeholder="SELECT * FRO... words" />
-            <marker date="1455096001837" expanded="true" signature="577:607" placeholder="SELECT * FRO... words" />
+            <marker date="1455179695841" expanded="true" signature="489:518" placeholder="SELECT * FRO... words" />
+            <marker date="1455179695841" expanded="true" signature="489:519" placeholder="SELECT * FRO... words" />
+            <marker date="1455179695841" expanded="true" signature="1199:1229" placeholder="SELECT * FRO... words" />
           </folding>
         </state>
       </provider>
