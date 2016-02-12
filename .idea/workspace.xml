@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a11e2680-9f6e-4393-9971-d343419a479e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/runes.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/words.db" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/havamal.py" afterPath="$PROJECT_DIR$/havamal.py" />
     </list>
     <ignored path="havamal_bot.iws" />
@@ -52,16 +51,26 @@
       <file leaf-file-name="havamal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/havamal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94165313">
-              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.6790924">
+              <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-                <marker date="1455270371170" expanded="true" signature="547:584" placeholder="SELECT * FRO... runes" />
-                <marker date="1455270371170" expanded="true" signature="547:592" placeholder="SELECT * FRO... runes" />
-                <marker date="1455270371170" expanded="true" signature="986:1015" placeholder="SELECT * FRO... words" />
-                <marker date="1455270371170" expanded="true" signature="986:1016" placeholder="SELECT * FRO... words" />
-                <marker date="1455270371170" expanded="true" signature="1695:1725" placeholder="SELECT * FRO... words" />
+                <marker date="1455297423129" expanded="true" signature="599:636" placeholder="SELECT * FRO... runes" />
+                <marker date="1455297423129" expanded="true" signature="599:644" placeholder="SELECT * FRO... runes" />
+                <marker date="1455297423129" expanded="true" signature="1066:1095" placeholder="SELECT * FRO... words" />
+                <marker date="1455297423129" expanded="true" signature="1066:1096" placeholder="SELECT * FRO... words" />
+                <marker date="1455297423129" expanded="true" signature="1887:1917" placeholder="SELECT * FRO... words" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python2.7/dist-packages/telepot/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="139" column="47" selection-start-line="139" selection-start-column="31" selection-end-line="139" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,9 +117,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -137,8 +146,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -374,27 +383,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25441968" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26294822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26772907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -433,11 +442,52 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
-            <marker date="1455270371170" expanded="true" signature="547:584" placeholder="SELECT * FRO... runes" />
-            <marker date="1455270371170" expanded="true" signature="547:592" placeholder="SELECT * FRO... runes" />
-            <marker date="1455270371170" expanded="true" signature="986:1015" placeholder="SELECT * FRO... words" />
-            <marker date="1455270371170" expanded="true" signature="986:1016" placeholder="SELECT * FRO... words" />
-            <marker date="1455270371170" expanded="true" signature="1695:1725" placeholder="SELECT * FRO... words" />
+            <marker date="1455297423129" expanded="true" signature="599:636" placeholder="SELECT * FRO... runes" />
+            <marker date="1455297423129" expanded="true" signature="599:644" placeholder="SELECT * FRO... runes" />
+            <marker date="1455297423129" expanded="true" signature="1066:1095" placeholder="SELECT * FRO... words" />
+            <marker date="1455297423129" expanded="true" signature="1066:1096" placeholder="SELECT * FRO... words" />
+            <marker date="1455297423129" expanded="true" signature="1887:1917" placeholder="SELECT * FRO... words" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+            <marker date="1455095480843" expanded="true" signature="187:204" placeholder="DELETE FROM " />
+            <marker date="1455095480843" expanded="true" signature="494:524" placeholder="INSERT INTO words... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding>
+            <element signature="e#45#59#0" expanded="true" />
+            <marker date="1455095965531" expanded="true" signature="1054:1073" placeholder="SELECT * FRO... words" />
+            <marker date="1455095965531" expanded="true" signature="1365:1384" placeholder="SELECT * FRO... words" />
+            <marker date="1455095965531" expanded="true" signature="1371:1372" placeholder="select title... entries" />
+            <marker date="1455095965531" expanded="true" signature="1371:1384" placeholder="select * fro... words" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/havamal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+            <marker date="1455297423129" expanded="true" signature="599:636" placeholder="SELECT * FRO... runes" />
+            <marker date="1455297423129" expanded="true" signature="599:644" placeholder="SELECT * FRO... runes" />
+            <marker date="1455297423129" expanded="true" signature="1066:1095" placeholder="SELECT * FRO... words" />
+            <marker date="1455297423129" expanded="true" signature="1066:1096" placeholder="SELECT * FRO... words" />
+            <marker date="1455297423129" expanded="true" signature="1887:1917" placeholder="SELECT * FRO... words" />
           </folding>
         </state>
       </provider>
@@ -458,13 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/telepot/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8296876">
-          <caret line="334" column="34" selection-start-line="334" selection-start-column="34" selection-end-line="334" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -494,17 +537,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/telepot/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="139" column="47" selection-start-line="139" selection-start-column="31" selection-end-line="139" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/havamal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94165313">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.6790924">
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
-            <marker date="1455270371170" expanded="true" signature="547:584" placeholder="SELECT * FRO... runes" />
-            <marker date="1455270371170" expanded="true" signature="547:592" placeholder="SELECT * FRO... runes" />
-            <marker date="1455270371170" expanded="true" signature="986:1015" placeholder="SELECT * FRO... words" />
-            <marker date="1455270371170" expanded="true" signature="986:1016" placeholder="SELECT * FRO... words" />
-            <marker date="1455270371170" expanded="true" signature="1695:1725" placeholder="SELECT * FRO... words" />
+            <marker date="1455297423129" expanded="true" signature="599:636" placeholder="SELECT * FRO... runes" />
+            <marker date="1455297423129" expanded="true" signature="599:644" placeholder="SELECT * FRO... runes" />
+            <marker date="1455297423129" expanded="true" signature="1066:1095" placeholder="SELECT * FRO... words" />
+            <marker date="1455297423129" expanded="true" signature="1066:1096" placeholder="SELECT * FRO... words" />
+            <marker date="1455297423129" expanded="true" signature="1887:1917" placeholder="SELECT * FRO... words" />
           </folding>
         </state>
       </provider>
