@@ -19,6 +19,11 @@ def handle(msg):
     print 'Got command: %s' % command
     conn = connect_db()
     cursor = conn.cursor()
+    ################################################
+    if command == '/rune':
+        result = 'Руны говорят с тобой !'
+        bot.sendMessage(chat_id, result)
+    ################################################
     if command == '/words':
         word_id = random.randint(1,164)
         params = (word_id,)
@@ -26,7 +31,6 @@ def handle(msg):
         fetch = cursor.fetchone()
         result = fetch[1].encode('utf-8').strip()
         bot.sendMessage(chat_id, result)
-
     command_list = command.split(" ")
     if command_list[0] == '/word':
         #get first argument from command, it should be a number between 1 and 164
