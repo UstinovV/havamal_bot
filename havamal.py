@@ -12,6 +12,10 @@ def connect_db():
     return sqlite3.connect('words.db')
 
 
+def connect_runes_db():
+    return sqlite3.connect('runes.db')
+
+
 def handle(msg):
     chat_id = msg['chat']['id']
     command = msg['text']
@@ -20,8 +24,15 @@ def handle(msg):
     conn = connect_db()
     cursor = conn.cursor()
     ################################################
-    if command == '/rune':
-        result = 'Руны говорят с тобой !'
+    if command == '/runes':
+        conn_runes = connect_runes_db()
+        cursor_runes = conn_runes.cursor()
+        cursor_runes.execute('SELECT * FROM runes ORDER BY RANDOM() LIMIT 3;')
+        fetch = cursor_runes.fetchall()
+        print fetch
+        result = 'Руны говорят тебе:\n'
+        for r in fetch:
+            result += "{0} - {1} \n".format(r[1],r[2].encode('utf-8'))
         bot.sendMessage(chat_id, result)
     ################################################
     if command == '/words':
