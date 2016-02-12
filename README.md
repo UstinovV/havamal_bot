@@ -14,4 +14,4 @@ Another function - rune divination(runes of Elder Futhark)
 - SQLite 
 
 ### TODO
-- [] try webhook (Flask, aiohttp), more info in teleport readme
+- [ ] try webhook (Flask, aiohttp), more info in teleport readme
