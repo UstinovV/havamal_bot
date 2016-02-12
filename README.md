@@ -13,3 +13,5 @@ Another function - rune divination(runes of Elder Futhark)
 - [Teleport framework](https://github.com/nickoala/telepot)
 - SQLite 
 
+### TODO
+- [] try webhook (Flask, aiohttp), more info in teleport readme
