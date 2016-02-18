@@ -77,7 +77,7 @@ def handle(msg):
                 bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
 
 TOKEN = sys.argv[1]  # get token from command-line
-show_keyboard = {'keyboard': [['/words', '/runes']]}
+show_keyboard = {'keyboard': [['/words', '/runes', '/next']]}
 
 
 

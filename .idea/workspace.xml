@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a11e2680-9f6e-4393-9971-d343419a479e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/havamal.py" afterPath="$PROJECT_DIR$/havamal.py" />
     </list>
     <ignored path="havamal_bot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,16 +51,16 @@
       <file leaf-file-name="havamal.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/havamal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90348524">
-              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.7104558">
+              <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
               <folding>
                 <element signature="e#42#52#0" expanded="true" />
-                <marker date="1455786204684" expanded="true" signature="543:580" placeholder="SELECT * FRO... runes" />
-                <marker date="1455786204684" expanded="true" signature="543:588" placeholder="SELECT * FRO... runes" />
-                <marker date="1455786204684" expanded="true" signature="1193:1223" placeholder="SELECT * FRO... words" />
-                <marker date="1455786204684" expanded="true" signature="1618:1647" placeholder="SELECT * FRO... words" />
-                <marker date="1455786204684" expanded="true" signature="1618:1648" placeholder="SELECT * FRO... words" />
-                <marker date="1455786204684" expanded="true" signature="2488:2518" placeholder="SELECT * FRO... words" />
+                <marker date="1455786909568" expanded="true" signature="543:580" placeholder="SELECT * FRO... runes" />
+                <marker date="1455786909568" expanded="true" signature="543:588" placeholder="SELECT * FRO... runes" />
+                <marker date="1455786909568" expanded="true" signature="1193:1223" placeholder="SELECT * FRO... words" />
+                <marker date="1455786909568" expanded="true" signature="1618:1647" placeholder="SELECT * FRO... words" />
+                <marker date="1455786909568" expanded="true" signature="1618:1648" placeholder="SELECT * FRO... words" />
+                <marker date="1455786909568" expanded="true" signature="2488:2518" placeholder="SELECT * FRO... words" />
               </folding>
             </state>
           </provider>
@@ -443,12 +443,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#42#52#0" expanded="true" />
-            <marker date="1455786204684" expanded="true" signature="543:580" placeholder="SELECT * FRO... runes" />
-            <marker date="1455786204684" expanded="true" signature="543:588" placeholder="SELECT * FRO... runes" />
-            <marker date="1455786204684" expanded="true" signature="1193:1223" placeholder="SELECT * FRO... words" />
-            <marker date="1455786204684" expanded="true" signature="1618:1647" placeholder="SELECT * FRO... words" />
-            <marker date="1455786204684" expanded="true" signature="1618:1648" placeholder="SELECT * FRO... words" />
-            <marker date="1455786204684" expanded="true" signature="2488:2518" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="543:580" placeholder="SELECT * FRO... runes" />
+            <marker date="1455786909568" expanded="true" signature="543:588" placeholder="SELECT * FRO... runes" />
+            <marker date="1455786909568" expanded="true" signature="1193:1223" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="1618:1647" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="1618:1648" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="2488:2518" placeholder="SELECT * FRO... words" />
           </folding>
         </state>
       </provider>
@@ -485,12 +485,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#42#52#0" expanded="true" />
-            <marker date="1455786204684" expanded="true" signature="543:580" placeholder="SELECT * FRO... runes" />
-            <marker date="1455786204684" expanded="true" signature="543:588" placeholder="SELECT * FRO... runes" />
-            <marker date="1455786204684" expanded="true" signature="1193:1223" placeholder="SELECT * FRO... words" />
-            <marker date="1455786204684" expanded="true" signature="1618:1647" placeholder="SELECT * FRO... words" />
-            <marker date="1455786204684" expanded="true" signature="1618:1648" placeholder="SELECT * FRO... words" />
-            <marker date="1455786204684" expanded="true" signature="2488:2518" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="543:580" placeholder="SELECT * FRO... runes" />
+            <marker date="1455786909568" expanded="true" signature="543:588" placeholder="SELECT * FRO... runes" />
+            <marker date="1455786909568" expanded="true" signature="1193:1223" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="1618:1647" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="1618:1648" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="2488:2518" placeholder="SELECT * FRO... words" />
           </folding>
         </state>
       </provider>
@@ -558,16 +558,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/havamal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90348524">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.7104558">
+          <caret line="88" column="18" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
           <folding>
             <element signature="e#42#52#0" expanded="true" />
-            <marker date="1455786204684" expanded="true" signature="543:580" placeholder="SELECT * FRO... runes" />
-            <marker date="1455786204684" expanded="true" signature="543:588" placeholder="SELECT * FRO... runes" />
-            <marker date="1455786204684" expanded="true" signature="1193:1223" placeholder="SELECT * FRO... words" />
-            <marker date="1455786204684" expanded="true" signature="1618:1647" placeholder="SELECT * FRO... words" />
-            <marker date="1455786204684" expanded="true" signature="1618:1648" placeholder="SELECT * FRO... words" />
-            <marker date="1455786204684" expanded="true" signature="2488:2518" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="543:580" placeholder="SELECT * FRO... runes" />
+            <marker date="1455786909568" expanded="true" signature="543:588" placeholder="SELECT * FRO... runes" />
+            <marker date="1455786909568" expanded="true" signature="1193:1223" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="1618:1647" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="1618:1648" placeholder="SELECT * FRO... words" />
+            <marker date="1455786909568" expanded="true" signature="2488:2518" placeholder="SELECT * FRO... words" />
           </folding>
         </state>
       </provider>
