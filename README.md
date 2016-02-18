@@ -7,12 +7,13 @@ Another function - rune divination(runes of Elder Futhark)
 - /words - get random qoute
 - /word \<number\> - get specific quote (from 1 to 164) 
 - /runes - get 3 random rune with short description
+- /next - next word of High One, progress saved by user_id
 
 **Used:**
 - python 2.7
 - [Teleport framework](https://github.com/nickoala/telepot)
-- SQLite 
+- SQLite
+- Redis
 
 ### TODO
-- [ ] save reading progress for user(m.b. we can use NoSQL)
 - [ ] try webhook (Flask, aiohttp), more info in teleport readme
