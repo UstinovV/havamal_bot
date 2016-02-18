@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
+# пирамидка ^_^ #
 import sys
 import time
+import redis
 import random
 import telepot
 import sqlite3
 
-TOKEN = sys.argv[1]  # get token from command-line
-show_keyboard = {'keyboard': [['/words', '/runes']]}
+from pprint import pprint
 
 
 def connect_db():
@@ -14,20 +15,36 @@ def connect_db():
 
 
 def handle(msg):
+    r = redis.StrictRedis(host='localhost', port=6379, db=0)
     chat_id = msg['chat']['id']
     command = msg['text']
     print 'Got command: %s' % command
     conn = connect_db()
     cursor = conn.cursor()
+
     ################################################
     if command == '/runes':
-        conn = connect_db()
-        cursor_runes = conn.cursor()
-        cursor_runes.execute('SELECT * FROM runes ORDER BY RANDOM() LIMIT 3;')
-        fetch = cursor_runes.fetchall()
+        cursor.execute('SELECT * FROM runes ORDER BY RANDOM() LIMIT 3;')
+        fetch = cursor.fetchall()
         result = 'Руны говорят тебе:\n'
         for r in fetch:
             result += "{0} - {1} \n".format(r[1], r[2].encode('utf-8'))
+        bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
+    ################################################
+    if command == '/next':
+        last_word = r.get(chat_id)
+        if last_word:
+            if last_word == 164:
+                last_word = 1
+            else:
+                last_word = int(last_word) + 1
+        else:
+            last_word = 1
+        r.set(chat_id,last_word)
+        cursor.execute('SELECT * FROM words where id=?', (last_word, ))
+        fetch = cursor.fetchone()
+        result = "Слово {0}:\n".format(last_word)
+        result += fetch[1].encode('utf-8').strip()
         bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
     ################################################
     if command == '/words':
@@ -35,12 +52,13 @@ def handle(msg):
         params = (word_id,)
         cursor.execute('SELECT * FROM words where id=?', params)
         fetch = cursor.fetchone()
-        result = fetch[1].encode('utf-8').strip()
+        result = "Слово {0}:\n".format(word_id)
+        result += fetch[1].encode('utf-8').strip()
         bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
+
     command_list = command.split(" ")
     if command_list[0] == '/word':
         #get first argument from command, it should be a number between 1 and 164
-
         try:
             word_id = command_list[1]
             word_id = int(word_id)
@@ -52,10 +70,16 @@ def handle(msg):
             else:
                 params = (word_id,)
                 cursor.execute('SELECT * FROM words where id=?', params)
-                fetch = cursor.fetchone()
 
-                result = fetch[1].encode('utf-8').strip()
+                fetch = cursor.fetchone()
+                result = "Слово {0}:\n".format(word_id)
+                result += fetch[1].encode('utf-8').strip()
                 bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
+
+TOKEN = sys.argv[1]  # get token from command-line
+show_keyboard = {'keyboard': [['/words', '/runes']]}
+
+
 
 bot = telepot.Bot(TOKEN)
 bot.notifyOnMessage(handle)
