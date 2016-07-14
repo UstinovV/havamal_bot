@@ -33,6 +33,7 @@ def handle(msg):
     ################################################
     if command == '/next':
         last_word = r.get(chat_id)
+        # we can use r.incr(chat_id)
         if last_word:
             if last_word == 164:
                 last_word = 1
