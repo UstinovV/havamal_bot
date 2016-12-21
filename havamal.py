@@ -29,7 +29,7 @@ def handle(msg):
         result = 'Руны говорят тебе:\n'
         for r in fetch:
             result += "{0} - {1} \n".format(r[1], r[2].encode('utf-8'))
-        bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
+        bot.sendMessage(chat_id, result)
     ################################################
     if command == '/next':
         last_word = r.get(chat_id)
@@ -46,7 +46,7 @@ def handle(msg):
         fetch = cursor.fetchone()
         result = "Слово {0}:\n".format(last_word)
         result += fetch[1].encode('utf-8').strip()
-        bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
+        bot.sendMessage(chat_id, result)
     ################################################
     if command == '/words':
         word_id = random.randint(1,164)
@@ -55,7 +55,7 @@ def handle(msg):
         fetch = cursor.fetchone()
         result = "Слово {0}:\n".format(word_id)
         result += fetch[1].encode('utf-8').strip()
-        bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
+        bot.sendMessage(chat_id, result)
 
     command_list = command.split(" ")
     if command_list[0] == '/word':
@@ -64,10 +64,10 @@ def handle(msg):
             word_id = command_list[1]
             word_id = int(word_id)
         except (ValueError, IndexError):
-            bot.sendMessage(chat_id, 'Один такого не говорил!', reply_markup=show_keyboard)
+            bot.sendMessage(chat_id, 'Один такого не говорил!')
         else:
             if word_id > 164 or word_id < 1:
-                bot.sendMessage(chat_id, 'Нет такого слова в речах Высокого!', reply_markup=show_keyboard)
+                bot.sendMessage(chat_id, 'Нет такого слова в речах Высокого!')
             else:
                 params = (word_id,)
                 cursor.execute('SELECT * FROM words where id=?', params)
@@ -75,7 +75,7 @@ def handle(msg):
                 fetch = cursor.fetchone()
                 result = "Слово {0}:\n".format(word_id)
                 result += fetch[1].encode('utf-8').strip()
-                bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
+                bot.sendMessage(chat_id, result)
 
 TOKEN = sys.argv[1]  # get token from command-line
 show_keyboard = {'keyboard': [['/words', '/runes', '/next']]}
