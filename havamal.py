@@ -29,7 +29,7 @@ def handle(msg):
         result = 'Руны говорят тебе:\n'
         for r in fetch:
             result += "{0} - {1} \n".format(r[1], r[2].encode('utf-8'))
-        bot.sendMessage(chat_id, result)
+        bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
     ################################################
     if command == '/next':
         last_word = r.get(chat_id)
@@ -46,7 +46,7 @@ def handle(msg):
         fetch = cursor.fetchone()
         result = "Слово {0}:\n".format(last_word)
         result += fetch[1].encode('utf-8').strip()
-        bot.sendMessage(chat_id, result)
+        bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
     ################################################
     if command == '/words':
         word_id = random.randint(1,164)
@@ -55,7 +55,7 @@ def handle(msg):
         fetch = cursor.fetchone()
         result = "Слово {0}:\n".format(word_id)
         result += fetch[1].encode('utf-8').strip()
-        bot.sendMessage(chat_id, result)
+        bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
 
     command_list = command.split(" ")
     if command_list[0] == '/word':
@@ -75,7 +75,7 @@ def handle(msg):
                 fetch = cursor.fetchone()
                 result = "Слово {0}:\n".format(word_id)
                 result += fetch[1].encode('utf-8').strip()
-                bot.sendMessage(chat_id, result)
+                bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
 
 TOKEN = sys.argv[1]  # get token from command-line
 show_keyboard = {'keyboard': [['/words', '/runes', '/next']]}
