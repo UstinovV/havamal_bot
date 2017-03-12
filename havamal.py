@@ -18,7 +18,7 @@ def handle(msg):
     r = redis.StrictRedis(host='localhost', port=6379, db=0)
     chat_id = msg['chat']['id']
     command = msg['text']
-    print 'Got command: %s' % command
+    print('Got command: {0}'.format(command))
     conn = connect_db()
     cursor = conn.cursor()
 
@@ -84,7 +84,7 @@ show_keyboard = {'keyboard': [['/words', '/runes', '/next']]}
 
 bot = telepot.Bot(TOKEN)
 bot.notifyOnMessage(handle)
-print 'I am listening ...'
+print('I am listening ...')
 
 while 1:
     time.sleep(10)
