@@ -2,20 +2,23 @@
 # пирамидка ^_^ #
 import sys
 import time
-import redis
 import random
 import telepot
 import sqlite3
 
 from pprint import pprint
+from telepot.loop import MessageLoop
 
 
 def connect_db():
     return sqlite3.connect('havamal.db')
 
+# user last readed word
+# user chat_id as key, word as value
+users_words = {}
+
 
 def handle(msg):
-    r = redis.StrictRedis(host='localhost', port=6379, db=0)
     chat_id = msg['chat']['id']
     command = msg['text']
     print('Got command: {0}'.format(command))
@@ -28,24 +31,24 @@ def handle(msg):
         fetch = cursor.fetchall()
         result = 'Руны говорят тебе:\n'
         for r in fetch:
-            result += "{0} - {1} \n".format(r[1], r[2].encode('utf-8'))
+            result += "{0} - {1} \n".format(r[1], r[2])
         bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
     ################################################
     if command == '/next':
-        last_word = r.get(chat_id)
-        # we can use r.incr(chat_id)
-        if last_word:
+
+        if chat_id in users_words.keys():
+            last_word = users_words[chat_id]
             if last_word == 164:
                 last_word = 1
             else:
-                last_word = int(last_word) + 1
+                last_word = last_word + 1
         else:
             last_word = 1
-        r.set(chat_id,last_word)
+        users_words[chat_id] = last_word
         cursor.execute('SELECT * FROM words where id=?', (last_word, ))
         fetch = cursor.fetchone()
         result = "Слово {0}:\n".format(last_word)
-        result += fetch[1].encode('utf-8').strip()
+        result += fetch[1].strip()
         bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
     ################################################
     if command == '/words':
@@ -54,7 +57,7 @@ def handle(msg):
         cursor.execute('SELECT * FROM words where id=?', params)
         fetch = cursor.fetchone()
         result = "Слово {0}:\n".format(word_id)
-        result += fetch[1].encode('utf-8').strip()
+        result += fetch[1].strip()
         bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
 
     command_list = command.split(" ")
@@ -74,7 +77,7 @@ def handle(msg):
 
                 fetch = cursor.fetchone()
                 result = "Слово {0}:\n".format(word_id)
-                result += fetch[1].encode('utf-8').strip()
+                result += fetch[1].strip()
                 bot.sendMessage(chat_id, result, reply_markup=show_keyboard)
 
 TOKEN = sys.argv[1]  # get token from command-line
@@ -83,7 +86,7 @@ show_keyboard = {'keyboard': [['/words', '/runes', '/next']]}
 
 
 bot = telepot.Bot(TOKEN)
-bot.notifyOnMessage(handle)
+MessageLoop(bot, handle).run_as_thread()
 print('I am listening ...')
 
 while 1:
