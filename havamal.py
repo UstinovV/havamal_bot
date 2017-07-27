@@ -7,6 +7,7 @@ import telepot
 import sqlite3
 
 from pprint import pprint
+from telepot.loop import MessageLoop
 
 
 def connect_db():
@@ -85,7 +86,7 @@ show_keyboard = {'keyboard': [['/words', '/runes', '/next']]}
 
 
 bot = telepot.Bot(TOKEN)
-bot.message_loop(handle)
+MessageLoop(bot, handle).run_as_thread()
 print('I am listening ...')
 
 while 1:
